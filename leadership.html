@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leadership — MMSMM</title>
+<meta name="description" content="Meet the people leading MMSMM's mission to support wounded IDF soldiers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .page-hero { padding: 72px 0 40px; width: min(var(--max-w), calc(100% - 2 * var(--edge))); margin: 0 auto 40px; }
+  .page-hero p.lede { max-width: none; width: 100%; }
+  .founder-block {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 56px;
+    align-items: start;
+    padding: 40px 0 90px;
+    width: min(var(--max-w), calc(100% - 2 * var(--edge)));
+    margin: 0 auto;
+  }
+  .founder-block img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius-lg); filter: grayscale(0.25) sepia(0.05) saturate(1.1); }
+  .founder-role { font-family: var(--font-display); color: var(--gold-600); font-weight: 600; margin-bottom: 6px; display:block; }
+  .team-section { background: var(--paper-dim); padding: 90px var(--edge); }
+  .team-inner { max-width: var(--max-w); margin: 0 auto; }
+  .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
+  .team-card { background: var(--white); border: 1px solid var(--sand-200); border-radius: var(--radius-md); overflow: hidden; text-align:left; }
+  .team-card .team-photo { width: 100%; aspect-ratio: 1/1; object-fit: cover; background: var(--sand-200); }
+  .team-card .team-body { padding: 22px 24px; }
+  .team-card .team-body h3 { font-size: 1.1rem; margin-bottom: 4px; }
+  .team-card .team-role { color: var(--ink-soft); font-size: 0.92rem; }
+  .placeholder-note { color: var(--ink-soft); font-size: 0.92rem; font-style: italic; }
+  .photo-placeholder {
+    width: 100%; aspect-ratio: 4/5; border-radius: var(--radius-lg);
+    background: var(--paper-dim); border: 1px dashed var(--sand-200);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ink-soft); font-size: 0.9rem; text-align: center; padding: 20px;
+  }
+  @media (max-width: 980px) {
+    .founder-block { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">MM<span>S</span>MM</a>
+    <nav class="main-nav">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="our-work.html">Our Work</a>
+      <a class="nav-link" href="leadership.html"><strong>Leadership</strong></a>
+      <a class="nav-link" href="get-involved.html">Get Involved</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="donate.html" class="btn btn-primary">Donate</a>
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <span class="kicker" style="font-family: var(--font-display); font-weight:600; color: var(--gold-600);">Leadership</span>
+  <h1>The people behind MMSMM</h1>
+</section>
+
+<section class="founder-block">
+  <div class="photo-placeholder">High-res photo of Rabbi Dvir needed</div>
+  <div>
+    <span class="founder-role">Founder</span>
+    <h2>Rabbi Dvir</h2>
+    <p>Rabbi Dvir founded MMSMM out of a direct commitment to wounded IDF soldiers — building a organization that meets them not just with treatment, but with genuine presence, faith, and community through every stage of recovery.</p>
+    <p class="placeholder-note">Full biography pending — send over Rabbi Dvir's background, story, and a high-resolution photo and this section will be completed with his real profile.</p>
+  </div>
+</section>
+
+<section class="team-section">
+  <div class="team-inner">
+    <h2>Meet the team</h2>
+    <p>MMSMM is run by a small, dedicated team working directly with soldiers and their families.</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-photo"></div>
+        <div class="team-body">
+          <h3>Team member name</h3>
+          <div class="team-role">Role / title</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"></div>
+        <div class="team-body">
+          <h3>Team member name</h3>
+          <div class="team-role">Role / title</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"></div>
+        <div class="team-body">
+          <h3>Team member name</h3>
+          <div class="team-role">Role / title</div>
+        </div>
+      </div>
+    </div>
+    <p class="placeholder-note" style="margin-top:28px;">Send names, roles, and photos for each team member and these cards will be filled in.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>© 2026 MMSMM. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="our-work.html">Our Work</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

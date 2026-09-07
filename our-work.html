@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Work — MMSMM</title>
+<meta name="description" content="How MMSMM supports wounded IDF soldiers through therapeutic retreats, ongoing daily care, and the NY Soul Journey.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .page-hero { padding: 72px 0 40px; width: min(var(--max-w), calc(100% - 2 * var(--edge))); margin: 0 auto 40px; }
+  .page-hero p.lede { font-size: 1.15rem; max-width: none; width: 100%; }
+  .work-block {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 56px;
+    align-items: center;
+    padding: 70px 0;
+    width: min(var(--max-w), calc(100% - 2 * var(--edge)));
+    margin: 0 auto;
+  }
+  .work-block.reverse { grid-template-columns: 1.05fr 0.95fr; }
+  .work-block.reverse .work-media { order: 2; }
+  .work-media img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--radius-lg); filter: grayscale(0.3) sepia(0.06) saturate(1.1); }
+  .work-copy ul { padding-left: 20px; margin: 18px 0 0; }
+  .work-copy li { color: var(--ink-soft); margin-bottom: 8px; }
+  @media (max-width: 980px) {
+    .work-block, .work-block.reverse { grid-template-columns: 1fr; }
+    .work-block.reverse .work-media { order: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">MM<span>S</span>MM</a>
+    <nav class="main-nav">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="our-work.html"><strong>Our Work</strong></a>
+      <a class="nav-link" href="leadership.html">Leadership</a>
+      <a class="nav-link" href="get-involved.html">Get Involved</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="donate.html" class="btn btn-primary">Donate</a>
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <span class="kicker" style="font-family: var(--font-display); font-weight:600; color: var(--gold-600);">Our Work</span>
+  <h1>Three ways we walk alongside them</h1>
+  <p class="lede">Recovery is not a single event — it's a process. Our programs meet soldiers at every stage: the acute work of healing, the daily reality of staying stable, and the deeper work of finding meaning again.</p>
+</section>
+
+<section class="work-block">
+  <div class="work-media">
+    <img src="https://static.wixstatic.com/media/b46a98_950c9abcb3c64e97bf19bcee952cb808~mv2.jpeg" alt="Therapeutic retreat setting">
+  </div>
+  <div class="work-copy">
+    <span class="pillar-tag">Healing &amp; Renewal</span>
+    <h2>Therapies and retreats</h2>
+    <p>Personalized therapeutic care combined with restorative retreats, helping soldiers regulate trauma, rebuild resilience, and begin the healing process in a safe, supportive environment.</p>
+    <ul>
+      <li>Individual and group therapy tailored to each soldier's recovery stage</li>
+      <li>Multi-day retreat weekends away from daily stressors</li>
+      <li>A structured, judgment-free space to begin processing trauma</li>
+    </ul>
+  </div>
+</section>
+
+<section class="work-block reverse">
+  <div class="work-media">
+    <img src="https://static.wixstatic.com/media/b46a98_f870d3fb9c48407ab88215f0768ea2e6~mv2.jpeg" alt="Ongoing support session">
+  </div>
+  <div class="work-copy">
+    <span class="pillar-tag">Daily Support &amp; Stability</span>
+    <h2>Ongoing care</h2>
+    <p>Recovery doesn't end when a retreat does. We provide consistent, hands-on support that accompanies soldiers beyond treatment — offering guidance, connection, and stability through everyday challenges.</p>
+    <ul>
+      <li>Regular check-ins and monthly gatherings</li>
+      <li>A community of peers navigating the same road</li>
+      <li>A stable point of contact for soldiers between formal treatment</li>
+    </ul>
+  </div>
+</section>
+
+<section class="work-block">
+  <div class="work-media">
+    <img src="https://static.wixstatic.com/media/b46a98_326c14e13ebd45d7a5a5e65fdb64dbaa~mv2.jpeg" alt="Soldier on the New York Soul Journey">
+  </div>
+  <div class="work-copy">
+    <span class="pillar-tag">The NY Soul Journey</span>
+    <h2>Reconnecting with faith and purpose</h2>
+    <p>A dedicated journey to the Ohel of the Lubavitcher Rebbe in New York, designed to help soldiers reconnect with faith, purpose, and hope at a deeply transformative spiritual place — a turning point for many in their recovery.</p>
+    <ul>
+      <li>A guided trip for soldiers ready to take this step</li>
+      <li>Time at the Ohel, alongside community and reflection</li>
+      <li>Hosted, in part, by ambassador families in New York</li>
+    </ul>
+  </div>
+</section>
+
+<section class="stats-band">
+  <div class="stats-inner">
+    <h2 style="grid-column: 1 / -1;">2025, in numbers</h2>
+    <div><div class="stat-num" data-target="117">0</div><div class="stat-label"><span class="stat-key">Soldiers</span>supported through our programs</div></div>
+    <div><div class="stat-num" data-target="11">0</div><div class="stat-label"><span class="stat-key">Retreat weekends</span>for soldiers and their families</div></div>
+    <div><div class="stat-num" data-target="770">0</div><div class="stat-label"><span class="stat-key">Hours</span>of individual therapy provided</div></div>
+    <div><div class="stat-num" data-target="26">0</div><div class="stat-label"><span class="stat-key">Monthly gatherings</span>and recovery workshops</div></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>© 2026 MMSMM. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="our-work.html">Our Work</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

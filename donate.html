@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donate — MMSMM</title>
+<meta name="description" content="Support MMSMM's mission to help wounded IDF soldiers heal, body, mind, and soul.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .page-hero { padding: 72px 0 40px; width: min(var(--max-w), calc(100% - 2 * var(--edge))); margin: 0 auto 40px; }
+  .page-hero p.lede { max-width: none; width: 100%; }
+  .donate-section {
+    padding: 0 0 100px;
+    width: min(var(--max-w), calc(100% - 2 * var(--edge)));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    max-width: 720px;
+  }
+  .donate-card {
+    background: var(--white);
+    border: 1px solid var(--sand-200);
+    border-radius: var(--radius-md);
+    padding: 36px 38px;
+  }
+  .donate-card h2 { font-size: 1.5rem; margin-bottom: 6px; }
+  .donate-card .tag { font-family: var(--font-display); font-weight: 600; color: var(--gold-600); font-size: 0.85rem; display: block; margin-bottom: 10px; }
+  .zelle-detail {
+    background: var(--paper-dim);
+    border-radius: var(--radius-sm);
+    padding: 18px 22px;
+    margin: 20px 0;
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--navy-900);
+  }
+  .zelle-detail span { display: block; font-family: var(--font-body); font-weight: 400; color: var(--ink-soft); font-size: 0.85rem; margin-bottom: 4px; }
+  .disclaimer {
+    background: var(--gold-100);
+    border-left: 3px solid var(--gold-500);
+    padding: 16px 20px;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: 0.92rem;
+    color: var(--ink);
+  }
+  .steps-mini { margin: 18px 0 0; padding-left: 20px; }
+  .steps-mini li { color: var(--ink-soft); margin-bottom: 8px; }
+  .coming-soon {
+    border: 1px dashed var(--sand-200);
+    background: transparent;
+  }
+  .coming-soon h2 { color: var(--ink-soft); }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">MM<span>S</span>MM</a>
+    <nav class="main-nav">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="our-work.html">Our Work</a>
+      <a class="nav-link" href="leadership.html">Leadership</a>
+      <a class="nav-link" href="get-involved.html">Get Involved</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="donate.html" class="btn btn-primary">Donate</a>
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <span class="kicker" style="font-family: var(--font-display); font-weight:600; color: var(--gold-600);">Donate</span>
+  <h1>Support a soldier's recovery</h1>
+  <p class="lede">Every gift helps fund therapy, retreats, and the ongoing care that carries a wounded soldier from pain to purpose.</p>
+</section>
+
+<div class="donate-section">
+
+  <div class="donate-card">
+    <span class="tag">Available now</span>
+    <h2>Donate via Zelle</h2>
+    <p>You can send a donation directly from your bank's app or website using Zelle.</p>
+    <div class="zelle-detail">
+      <span>Send to</span>
+      [ZELLE EMAIL OR PHONE NUMBER — TO BE PROVIDED BY MMSMM'S BUSINESS BANK ACCOUNT]
+    </div>
+    <ol class="steps-mini">
+      <li>Open your bank's app and choose "Send with Zelle"</li>
+      <li>Enter the email or phone number above</li>
+      <li>Include your name and email in the memo/note so we can send you a confirmation</li>
+    </ol>
+    <div class="disclaimer">
+      MMSMM's 501(c)(3) nonprofit status is currently pending. Donations made at this time are <strong>not yet tax-deductible</strong>. Once our nonprofit status is approved, we will issue retroactive tax receipts for all donations received during this period — please make sure to include your name and email with your gift so we can follow up.
+    </div>
+  </div>
+
+  <div class="donate-card coming-soon">
+    <span class="tag" style="color: var(--ink-soft);">Coming soon</span>
+    <h2>Card &amp; recurring donations</h2>
+    <p>Once our 501(c)(3) status is approved, this page will offer a secure, fee-free donation form supporting one-time and recurring gifts by card — with instant tax receipts.</p>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>© 2026 MMSMM. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="our-work.html">Our Work</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
