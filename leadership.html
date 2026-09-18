@@ -24,25 +24,10 @@
   .founder-block img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius-lg); filter: grayscale(0.25) sepia(0.05) saturate(1.1); }
   .founder-block.reverse { grid-template-columns: 1.2fr 0.8fr; }
   .founder-block.reverse > *:first-child { order: 2; }
+  .founder-block.single-col { grid-template-columns: 1fr; max-width: 680px; }
   .founder-role { font-family: var(--font-display); color: var(--gold-600); font-weight: 600; margin-bottom: 6px; display:block; }
-  .team-section { background: var(--paper-dim); padding: 90px var(--edge); }
-  .team-inner { max-width: var(--max-w); margin: 0 auto; }
-  .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
-  .team-card { background: var(--white); border: 1px solid var(--sand-200); border-radius: var(--radius-md); overflow: hidden; text-align:left; }
-  .team-card .team-photo { width: 100%; aspect-ratio: 1/1; object-fit: cover; background: var(--sand-200); }
-  .team-card .team-body { padding: 22px 24px; }
-  .team-card .team-body h3 { font-size: 1.1rem; margin-bottom: 4px; }
-  .team-card .team-role { color: var(--ink-soft); font-size: 0.92rem; }
-  .placeholder-note { color: var(--ink-soft); font-size: 0.92rem; font-style: italic; }
-  .photo-placeholder {
-    width: 100%; aspect-ratio: 4/5; border-radius: var(--radius-lg);
-    background: var(--paper-dim); border: 1px dashed var(--sand-200);
-    display: flex; align-items: center; justify-content: center;
-    color: var(--ink-soft); font-size: 0.9rem; text-align: center; padding: 20px;
-  }
   @media (max-width: 980px) {
     .founder-block { grid-template-columns: 1fr; }
-    .team-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -81,44 +66,11 @@
   </div>
 </section>
 
-<section class="founder-block reverse">
-  <div class="photo-placeholder">High-res photo of Nadav Elbaz needed</div>
+<section class="founder-block reverse single-col">
   <div>
     <span class="founder-role">Vice President &amp; IDF Reserve Major</span>
     <h2>Nadav Elbaz</h2>
     <p>Together with Rabbi Dvir, Vice President and IDF Reserve Major Nadav Elbaz helps lead MMSMM's mission — walking alongside wounded soldiers on their journey toward healing, strength, and renewal, and ensuring every dollar donated goes directly to the soldiers who need it most.</p>
-    <p class="placeholder-note">Full biography pending — send over Nadav's background and a high-resolution photo and this section will be completed with his real profile.</p>
-  </div>
-</section>
-
-<section class="team-section">
-  <div class="team-inner">
-    <h2>Meet the team</h2>
-    <p>MMSMM is run by a small, dedicated team working directly with soldiers and their families.</p>
-    <div class="team-grid">
-      <div class="team-card">
-        <div class="team-photo"></div>
-        <div class="team-body">
-          <h3>Team member name</h3>
-          <div class="team-role">Role / title</div>
-        </div>
-      </div>
-      <div class="team-card">
-        <div class="team-photo"></div>
-        <div class="team-body">
-          <h3>Team member name</h3>
-          <div class="team-role">Role / title</div>
-        </div>
-      </div>
-      <div class="team-card">
-        <div class="team-photo"></div>
-        <div class="team-body">
-          <h3>Team member name</h3>
-          <div class="team-role">Role / title</div>
-        </div>
-      </div>
-    </div>
-    <p class="placeholder-note" style="margin-top:28px;">Send names, roles, and photos for each team member and these cards will be filled in.</p>
   </div>
 </section>
 
