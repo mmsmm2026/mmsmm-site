@@ -136,6 +136,7 @@ nav.main-nav a.nav-link:hover { color: var(--navy-900); }
   grid-template-columns: 1.05fr 0.95fr;
   align-items: stretch;
   min-height: 60vh;
+  gap: 0;
 }
 .hero-copy {
   display: flex;
@@ -440,13 +441,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   nav.main-nav.nav-open { display: flex; }
   nav.main-nav a.nav-link { padding: 12px 0; width: 100%; border-bottom: 1px solid var(--paper-dim); }
   .menu-toggle { display: flex; }
-  .hero { grid-template-columns: 1fr; min-height: auto; }
-  .hero-media-wrap { justify-content: center; }
+
+  .hero { grid-template-columns: 1fr; min-height: auto; gap: 32px; }
+  .hero-copy { padding-top: 40px; }
+  .hero-media-wrap { justify-content: center; padding-bottom: 40px; }
   .hero-media { height: 40vh; }
+
+  .pillars { padding: 60px var(--edge) 50px; }
   .pillar-grid { grid-template-columns: 1fr; }
+
+  .stats-band { padding: 56px var(--edge); }
   .stats-inner { grid-template-columns: 1fr 1fr; }
-  .journey { grid-template-columns: 1fr; }
-  .ambassador-inner { grid-template-columns: 1fr; }
-  .contact-inner { grid-template-columns: 1fr; }
+
+  .journey-outer { padding: 60px var(--edge); }
+  .journey { grid-template-columns: 1fr; gap: 32px; }
+
+  .ambassador { padding: 44px var(--edge); }
+  .ambassador-inner { grid-template-columns: 1fr; gap: 32px; }
+
+  .partners-outer { padding: 50px var(--edge) 60px; }
+
+  .contact-band { padding: 56px var(--edge); }
+  .contact-inner { grid-template-columns: 1fr; gap: 32px; }
   .form-row { grid-template-columns: 1fr; }
 }
