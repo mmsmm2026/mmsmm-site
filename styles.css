@@ -444,8 +444,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
   .hero { grid-template-columns: 1fr; min-height: auto; gap: 32px; }
   .hero-copy { padding-top: 40px; }
-  .hero-media-wrap { justify-content: center; padding-bottom: 40px; }
-  .hero-media { height: 40vh; }
+  .hero-media-wrap { justify-content: center; padding: 0 var(--edge) 40px; }
+  .hero-media { height: auto; width: 100%; aspect-ratio: 1/1; border-radius: var(--radius-lg); }
 
   .pillars { padding: 60px var(--edge) 50px; }
   .pillar-grid { grid-template-columns: 1fr; }
