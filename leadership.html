@@ -22,6 +22,8 @@
     margin: 0 auto;
   }
   .founder-block img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius-lg); filter: grayscale(0.25) sepia(0.05) saturate(1.1); }
+  .founder-block.reverse { grid-template-columns: 1.2fr 0.8fr; }
+  .founder-block.reverse > *:first-child { order: 2; }
   .founder-role { font-family: var(--font-display); color: var(--gold-600); font-weight: 600; margin-bottom: 6px; display:block; }
   .team-section { background: var(--paper-dim); padding: 90px var(--edge); }
   .team-inner { max-width: var(--max-w); margin: 0 auto; }
@@ -71,12 +73,21 @@
 </section>
 
 <section class="founder-block">
-  <div class="photo-placeholder">High-res photo of Rabbi Dvir needed</div>
+  <img src="https://static.wixstatic.com/media/b46a98_f1961b8d0b8440b9b988e386bcd6cd51~mv2.jpg" alt="Rabbi Dvir Even Chen, Founder of MMSMM">
   <div>
-    <span class="founder-role">Founder</span>
-    <h2>Rabbi Dvir</h2>
-    <p>Rabbi Dvir founded MMSMM out of a direct commitment to wounded IDF soldiers — building a organization that meets them not just with treatment, but with genuine presence, faith, and community through every stage of recovery.</p>
-    <p class="placeholder-note">Full biography pending — send over Rabbi Dvir's background, story, and a high-resolution photo and this section will be completed with his real profile.</p>
+    <span class="founder-role">Founder &amp; Spiritual Leader</span>
+    <h2>Rabbi Dvir Even Chen</h2>
+    <p>Rabbi Dvir Even Chen founded MMSMM with a clear mission: to help wounded soldiers rebuild their lives and find a path toward healing, dignity, and renewed purpose. Through dedication and compassion, he leads MMSMM in providing support, resources, and community to those who have sacrificed so much.</p>
+  </div>
+</section>
+
+<section class="founder-block reverse">
+  <div class="photo-placeholder">High-res photo of Nadav Elbaz needed</div>
+  <div>
+    <span class="founder-role">Vice President &amp; IDF Reserve Major</span>
+    <h2>Nadav Elbaz</h2>
+    <p>Together with Rabbi Dvir, Vice President and IDF Reserve Major Nadav Elbaz helps lead MMSMM's mission — walking alongside wounded soldiers on their journey toward healing, strength, and renewal, and ensuring every dollar donated goes directly to the soldiers who need it most.</p>
+    <p class="placeholder-note">Full biography pending — send over Nadav's background and a high-resolution photo and this section will be completed with his real profile.</p>
   </div>
 </section>
 
